@@ -1,0 +1,62 @@
+	<img src="images/covers/1.jpg" alt="Couverture du livre" />
+	<h1>HTML5 et CSS3 : Maîtrisez les standards de la création de sites web</h1>
+	<p>Auteur: Christophe AUBRY </p>
+	<p>Edition: ENI</p> 
+	<p>Date de parution: Novembre 2020</p>
+	<p>Table des matières: </p>
+	<ol>
+		<li>L'évolution des spécifications
+			<ol>
+				<li>Une brève histoire du Web</li>
+				<li>Les travaux d’élaboration des spécifications</li>
+				<li>L'évolution du HTML</li>
+				<li>L'évolution des CSS</li>
+			</ol>
+		</li>
+		<li>Les navigateurs 
+			<ol>
+				<li>L'évolution des navigateurs</li>
+				<li>Les outils de développement</li>
+				<li>La compatibilité des navigateurs</li>
+			</ol>
+		</li>
+		<li>Les bonnes pratiques 
+			<ol>
+				<li>Séparer le contenu de la mise en forme</li>
+				<li>Utiliser une structure sémantique</li>
+				<li>Optimiser le code et organiser vos fichiers</li>
+				<li>Un exemple d’une page bien formée</li>
+				<li>Valider le code de vos pages</li>
+			</ol>
+		</li>
+		<li>Les éléments HTML 
+			<ol>
+				<li>Bien utiliser le HTML</li>
+				<li>Les balises et les contenus</li>
+				<li>Les attributs des éléments</li>
+				<li>Le bon usage de la syntaxe</li>
+				<li>L'imbrication des éléments</li>
+				<li>Les commentaires</li>
+			</ol>
+		</li>
+		<li>La structure des pages 
+			<ol>
+				<li>La structure générale des pages web</li>
+				<li>La déclaration doctype</li>
+				<li>L'élément html</li>
+				<li>L'élément head
+					<ul>
+						<li>Les éléments enfant de l'en-tête</li>
+						<li>Les éléments meta</li>
+						<li>L'élément title</li>
+						<li>L'élément link</li>
+						<li>L'élément style</li>
+						<li>L'élément script</li>
+					</ul>
+				</li>
+				<li>L'élément body</li>
+				<li>Les propriétés d'affichage</li>
+				<li>Exemple d'une structure simple</li>
+			</ol>
+		</li>
+	</ol>

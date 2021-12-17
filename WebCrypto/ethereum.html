@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Crypt'Isen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="introduction à la cryptomonnaie">
+    <meta name="keywords" content="cryptomonnaie, cryptocurrency, crypto, bitcoin, ethereum">
+    <meta name="author" content="Evain Sacha - Milo Montuori">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="sidenav">
+      <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
+      <label for="toggle-nav" class="nav-button"></label>
+      <ul class="main-nav">
+        <!-- menu principal -->
+        <li><a href="index.html" ><i class="accueil"></i>Accueil</a></li>
+        <li><i class="minav"></i>Rubriques
+          <ul class="hidden">
+            <li><a href="whoareus.html">Qui somme-nous ?</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="usefull.html">Références utiles</a></li>
+            <li><a href="lexique.html">Lexique (!)</a></li>
+          </ul>
+        </li>
+        <!-- menu cryptos -->
+        <li><i class="minav"></i>Cryptos Actuelles
+            <ul class="hidden">
+              <li><a href="btc.html">Bitcoin</a></li>
+              <li><a href="ethereum.html">Ethereum</a></li>
+              <li><a href="chainlink.html">Chainlink</a></li>
+            </ul>
+        </li>
+      </ul>
+      <!-- footer dans le menu nav -->
+      <div class="footer">
+        Crypt'Isen par Milo et Sacha
+        2021-2022
+      </div>
+    </nav>
+
+    <!-- partie principale / texte -->
+    <main>     
+    <div class="center">
+      <div class="title">Crypt'Isen</div>
+      <div class="sub_title">la cryptomonnaie pour tous !</div>
+    </div>
+    <h3>Ethereum en quelques mots : </h3>
+    <p>
+      Ethereum, nom qui désigne la blockchain(l'écosystème) ou la monnaie, est la deuxième cryptomonnaie la plus importante,
+      en terme de marketcap mais aussi d'utilisation.<br><br> Cette blockchain permet de créer d'autres cryptomonnaies ou applications décentralisées, appelées tokens.
+      Ils sont désignés par le terme technique 'token-erc20', et sont programmés dans le langage solidity.
+      <br><br>Grâce à ethereum, de nombreuses innovations technologiques ont vu le jour,cet écosysteme a grandement contribué
+      à la démocratisation des cryptomonnaies et des applications décentralisées.
+
+    </p>
+    <h3>Graphique du prix de la paire ETH/USD.</h3>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_18f9c"></div>
+      <div class="tradingview-widget-copyright"><a href="https://fr.tradingview.com/symbols/ETHUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">ETHUSD graphique</span></a> par TradingView</div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "width" : "100%",
+      "height": 610,
+      "symbol": "COINBASE:ETHUSD",
+      "interval": "D",
+      "timezone": "Etc/UTC",
+      "theme": "dark",
+      "style": "1",
+      "locale": "fr",
+      "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false,
+      "hide_legend": true,
+      "save_image": false,
+      "container_id": "tradingview_18f9c"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </main>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Crypt'Isen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="introduction à la cryptomonnaie">
+    <meta name="keywords" content="cryptomonnaie, cryptocurrency, crypto, bitcoin, ethereum">
+    <meta name="author" content="Evain Sacha - Milo Montuori">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="sidenav">
+      <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
+      <label for="toggle-nav" class="nav-button"></label>
+      <ul class="main-nav">
+        <!-- menu principal -->
+        <li><a href="index.html" ><i class="accueil"></i>Accueil</a></li>
+        <li><i class="minav"></i>Rubriques
+          <ul class="hidden">
+            <li><a href="whoareus.html">Qui somme-nous ?</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="usefull.html">Références utiles</a></li>
+            <li><a href="lexique.html">Lexique (!)</a></li>
+          </ul>
+        </li>
+        <!-- menu cryptos -->
+        <li><i class="minav"></i>Cryptos Actuelles
+            <ul class="hidden">
+              <li><a href="btc.html">Bitcoin</a></li>
+              <li><a href="ethereum.html">Ethereum</a></li>
+              <li><a href="chainlink.html">Chainlink</a></li>
+            </ul>
+        </li>
+      </ul>
+      <!-- footer dans le menu nav -->
+      <div class="footer">
+        Crypt'Isen par Milo et Sacha
+        2021-2022
+      </div>
+    </nav>
+
+    <!-- partie principale / texte -->
+    <main>  
+      
+    <div class="center">
+        <div class="title">Lexique : </div>
+        <div class="sub_title">Toutes les définitions dont vous pouvez avoir besoin.</div>
+    </div>
+    <div class="text">
+        <h3>Cryptomonnaie : </h3>
+        <p>Actif monétaire numérique reposant sur la technologie de la blockchain.</p>
+        <h3>Blockchain : </h3>
+        <p>
+            En français "chaine de blocs", ce mot désigne une technologie qui prend la forme d'un annuaire de transactions
+            géant et public, où chacun peut voir toutes les actions effectuées au sein du réseau. Ce système est sécurisé
+            par l'intermédiaire de "nodes", qui sont des systèmes informatiques sur lequel le logiciel de la blockchain utilisé
+            est lancé. Chaque noeud a sa version de l'annuaire et le rend donc infalsifiable à partir d'un certain nombre d'utilisateur.
+        </p>
+        <h3>Wallet : </h3>
+        <p>
+          Un wallet, ou portefeuille en français, est un portefeuille virtuel sur lequel sont stockés vos cryptomonnaies.
+          Il peut exister sur une ou plusieurs blockchains, et est en réalité une simple adresse hexadécimale dont la sécurité repose
+          sur le principe des clés RSA (système de clé privée/clé publique). Vous disposez de ces deux clés, mais n'utiliserez que la clé
+          publique pour effectuer des transactions, l'autre servant uniquement à vous authentifier et à 'signer' les actions de façon 
+          cryptographique.
+        </p>
+        <h3>Token : </h3>
+        <p>Un token est une cryptomonnaie qui n'a pas sa propre blockchain. C'est un actif qui se base sur la technologie d'une blockchain
+          déjà existante, mais régit par un code qui lui est propre. Ce code est appelé smart-contract.
+        </p>
+        <h3>Smart-contract : </h3>
+        <p>
+            Un smart-contract est le nom donné au code source des applications décentralisées qui résident sur les blockchains qui
+            permettent l'upload de code. Un SC permet de créer une application, une sorte de logiciel utilisant la blockchain, que 
+            ce soit pour effectuer des transactions (c'est donc le moyen de prédiléction pour créer des application de finance décentralisées),
+            ou encore pour récupérer des infos et en signer sur la blockchain, l'avantage majoritaire étant d'augmenter considérablement la sécurité
+            de l'application.
+        </p>
+        <h3>Finance décentralisée :</h3>
+        <p>
+            La finance décentralisée est une des nombreuses applications de la blockchain aux technologies prééexistantes.
+            Cette finance est entièrement autonome, car dirigée par le code déployé à son lancement et elle ne repose sur aucun 
+            tier de confiance. En effet, elle se sécurise par la quantité phénoménale de nodes utilisant la blockchain. Les transactions sont donc
+            , comme dit précédemment, infalsifiables. Cette sorte de finance est une alternative pour toutes personnes étant inderdies
+            bancaires, par exemple. Elle profite de la rapidité et la fiabilité de la blockchain pour effectuer des transferts d'argents,
+            ce qui la rend de plus en plus attractive. La finance décentralisée offre également des rendements hors normes, pour un risque presque
+            nul, et ce comparé à la finance classique.
+        </p>
+        <h3>Exchange centralisé/décentralisé</h3>
+        <p>Un exchange de cryptomonnaie est une plateforme qui permet d'échanger/trader des cryptomonnaies sur diverses blockchains.
+          Chaque blockchain a un exchange plus plébiscité que d'autres, avec plus ou moins de fonctionnalités qu'on verra par la suite.
+        </p>
+        <h3>Swap :</h3>
+        <p>Un swap est un echange d'une cryptomonnaie pour une autre sur un exchange décentralisé. </p>
+        <h3>Pool de liquidité : </h3>
+        <p>Une pool de liquidité est une adresse sur un smart-contract sur lequel on dépose des fonds contre des intérêts.
+          Ceux-ci peuvent être journaliers, ou annuels. Les modalités de récompenses peuvent changer d'une plateforme à l'autre, mais
+          la dynamique la plus répandue est de récompenser l'utilisateur qui dépose ses tokens via 1/3 des frais générés sur la blockchain.
+          Ce tier de frais est ensuite redistribué entre les acteurs de la pool, selon la quantité que vous avez déposé.
+          La plupart des pools sont dites "liquides", c'est à dire que vous pouvez retirer votre argent/vos cryptomonnaies sans pénalités
+          et immédiatements (sauf quelques rares exceptions).
+        </p>
+        <h3>Farming :</h3>
+        <p>
+          Le farming semble similaire au pooling, à la différence qu'on ne dépose pas un token mais une paire.
+          Les rendements sont plus élevés mais vous êtes également exposé à un risque d'Impermanent Loss. 
+        </p>
+        <h3>L'Impermanent Loss :</h3>
+        <p>L'impermanent loss est la perte non permanente subie lorsque vous farmez une paire de token, et que l'un deux subit une variation de prix.
+          Lorsque vous déposez des tokens sur une farm, vous recevez des tokens dits "LP", pour liquidity provider.
+          Ces tokens représentent votre part dans la totalité des liquidités de la farm. Or, pour que sa valeur reste stable,
+          si le prix d'un des tokens varie, des robots vont automatiquement réguler le nombre de token dans la pool, augmentant ou réduisant votre nombre de token dans la pool.
+          L'impermanent loss est donc une perte par rapport au prix du token, si l'un monte, vous auriez peut être plus gagné en le gardant sans 
+          le mettre en farming. A vos calculatrices !
+        </p>
+        <h3>Bridge :</h3>
+        <p>
+            Un bridge entre deux blockchains se traduit littéralement comme un pont entre deux ecosystemes qui ne peuvent normalement pas
+            communiquer à l'aide du code fournit par le développeur de la blockchain. Les bridges sont donc possibles sur certains
+            exchanges décentralisés qui permettent, à l'aide du nombre de transactions, un mouvement à grande échelle et à moindre
+            frais entre les écosystèmes.
+        </p>
+        <h3>Marketcap : </h3>
+        <p>
+          Le marketcap d'une cryptomonnaie est la valeur qui s'obtient en multipliant le nombre de token en circulations par le prix unitaire.
+          Cette valeur sert à comparer le poid d'une cryptomonnaie face à une autre. Grâce à cet indicateur on peut mesurer l'ampleur économique
+          d'une technologie.
+        </p>
+       
+    </div>
+    
+  </main>
+</body>
+</html>
+  

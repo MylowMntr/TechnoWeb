@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Crypt'Isen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="introduction à la cryptomonnaie">
+    <meta name="keywords" content="cryptomonnaie, cryptocurrency, crypto, bitcoin, ethereum">
+    <meta name="author" content="Evain Sacha - Milo Montuori">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="sidenav">
+      <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
+      <label for="toggle-nav" class="nav-button"></label>
+      <ul class="main-nav">
+        <!-- menu principal -->
+        <li><a href="index.html" ><i class="accueil"></i>Accueil</a></li>
+        <li><i class="minav"></i>Rubriques
+          <ul class="hidden">
+            <li><a href="whoareus.html">Qui somme-nous ?</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="usefull.html">Références utiles</a></li>
+            <li><a href="lexique.html">Lexique (!)</a></li>
+          </ul>
+        </li>
+        <!-- menu cryptos -->
+        <li><i class="minav"></i>Cryptos Actuelles
+            <ul class="hidden">
+              <li><a href="btc.html">Bitcoin</a></li>
+              <li><a href="ethereum.html">Ethereum</a></li>
+              <li><a href="chainlink.html">Chainlink</a></li>
+            </ul>
+        </li>
+      </ul>
+      <!-- footer dans le menu nav -->
+      <div class="footer">
+        Crypt'Isen par Milo et Sacha
+        2021-2022
+      </div>
+    </nav>
+
+    <!-- partie principale / texte -->
+    <main>
+      <div class="center">
+        <div class="title">Besoin de nous contacter ?</div>
+        <div class="sub_title">Passez par le formulaire ci-dessous !</div>
+      </div>
+        <form method="post" id="contactForm" >
+          <div class="row">
+            <div class="form-group">
+              <input type="text" class="formulaire" name="prenom" id="prenom" placeholder="Prénom">
+            </div>
+            <div class="form-group">
+              <input type="text" class="formulaire" name="nom" id="nom" placeholder="Nom">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <input type="text" class="formulaire" name="email" id="email" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <textarea class="formulaire" name="message" id="message" cols="35" rows="9" placeholder="Votre message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <input type="submit" value="Envoyer" class="btn">
+            </div>
+          </div>
+        </form>
+    </main>
+</body>
+</html>
+  

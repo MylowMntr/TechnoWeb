@@ -1,0 +1,282 @@
+:root{
+    --violet-Junia:#4A235A;
+    --violet-clair:#F5EEF8;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header{
+    padding: 15px;
+}
+
+main{
+    color: var(--violet-Junia);
+    background-color: var(--violet-clair);
+    padding: 15px;
+}
+
+footer{
+    color: white;
+    background-color: var(--violet-Junia);
+    font-weight: bold;
+    padding: 15px;
+}
+
+body{
+    margin: 0
+}
+
+
+h1{
+    font-size: 15px;
+}
+
+.h1detail{
+    font-size: 18px;
+}
+
+.poster{
+    height: 200px;
+}
+
+.posterdetail{
+    height: 300px;
+}
+
+.icon{
+    height: 50px;
+}
+
+#logo{
+    height: 100px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.formLink{
+    color: white;
+    text-decoration: none;
+}
+.formLink:hover{
+    text-decoration: underline
+}
+
+#login{
+    text-decoration: none;
+    color: var(--violet-Junia);
+    background-color: white;
+    text-align: center;
+    border: 2px solid var(--violet-Junia);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#login:hover{
+    color: white;
+    background-color: var(--violet-Junia);
+}
+
+.book_summary{
+    text-decoration: none;
+    color: var(--violet-Junia);
+    background-color: var(--violet-clair);
+    text-align: center;
+    border: 1px solid var(--violet-Junia);
+    padding: 5px;
+}
+.book_summary:hover{
+    color: white;
+    background-color: var(--violet-Junia);
+}
+
+.fromLetter>fieldset{
+    border: 1px solid var(--violet-Junia);
+    width: 60%;
+    margin: auto;
+    box-sizing: content-box;
+}
+.fromLetter>fieldset:hover{
+    box-shadow: 2px 2px 5px var(--violet-Junia);
+}
+.fromLetter>fieldset>legend{
+    font-weight: bold;
+    text-shadow: 1px 1px var(--violet-Junia);
+}
+.fromLetter>fieldset>label{
+    font-weight: bold;
+    width: 25%;
+    display: inline-block;
+}
+.fromLetter>fieldset>input[type="text"],.fromLetter>fieldset>input[type="email"],select {
+    border: none;
+    border-bottom: 1px solid var(--violet-Junia);
+    background-color: var(--violet-clair);
+    width: 25%;
+    color: var(--violet-Junia);
+}
+.fromLetter>fieldset>input[type="text"]:focus,.fromLetter>fieldset>input[type="email"]:focus{
+    outline-style: none;
+    border-bottom: 1px solid red;
+    background-color: white;
+}
+.fromLetter>fieldset>textarea{
+    width: 25%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    background-color: var(--violet-clair);
+}
+.fromLetter>fieldset>textarea:focus{
+    outline-style: none;
+    border: 1px solid red;
+    background-color: white;
+    width: 50%;
+    height: 100px;
+    transition: width 3s, height 2s;
+}
+.fromLetter>fieldset>input[type="submit"],.fromLetter>fieldset>input[type="reset"]{
+    font-weight: bold;
+    color: white;
+    background-color: var(--violet-Junia);
+    border: 2px solid var(--violet-Junia);
+    margin: 10px;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--violet-Junia);
+}
+.fromLetter>fieldset>input[type="submit"]:hover,.fromLetter>fieldset>input[type="reset"]:hover{
+    color: red;
+    background-color: white;
+    border: 2px solid red;    
+    box-shadow: 2px 2px 5px red;
+    cursor: pointer;
+}
+
+
+.newsletter{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.newsletter>.form {
+    background-color: var(--violet-Junia);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+    width: auto;
+}
+  
+.newsletter>.form>.titre {
+    color: white;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+  
+.newsletter>.form>.stitre {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+  
+.newsletter>.form>.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+  
+.newsletter>.form>.ic1 {
+    margin-top: 40px;
+}
+  
+.newsletter>.form>.ic2 {
+    margin-top: 30px;
+}
+  
+.newsletter>.form>.input-container>.input {
+    background-color: black;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+  
+.newsletter>.form>.input-container>.cut {
+    background-color: var(--violet-Junia);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 60px;
+}
+  
+.newsletter>.form>.input-container>.cut-short {
+    width: 50px;
+}
+  
+.newsletter>.form>.input-container>input:focus ~ .cut,
+.newsletter>.form>.input-container>input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+  
+.newsletter>.form>.input-container>.placeholder {
+    color: grey;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+  
+.newsletter>.form>.input-container>input:focus ~ .placeholder,
+.newsletter>.form>.input-container>input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+  
+.newsletter>.form>.input-container>input:not(:placeholder-shown) ~ .placeholder {
+    color: grey;
+}
+  
+.newsletter>.form>.input-container>input:focus ~ .placeholder {
+    color: red;
+}
+
+.newsletter>.form>.submit {
+    background-color: var(--violet-clair);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--violet-Junia);
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+  
+.newsletter>.form>.submit:active {
+    color: white;
+    background-color: var(--violet-Junia);
+}
+  

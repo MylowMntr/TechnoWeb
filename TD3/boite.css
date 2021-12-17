@@ -1,0 +1,15 @@
+.flottantgauche{
+    float: left;
+    background-color: yellow;
+    margin: 5px;
+    padding: 2px 10px;
+}
+.flottantdroite{
+    float: right;
+    background-color: #ADDFDE;
+    margin: 5px;
+    padding: 2px 10px;
+}
+.plusflottant{
+    clear: both;
+}

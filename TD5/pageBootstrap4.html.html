@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Un exemple de page avec Bootstrap 4</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link active"href="#">Page 1</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link"href="#">Page 2</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link"href="#">Page 3</a>
+			</li>
+		</ul>
+	</nav>
+
+	
+	<ul class="nav justify-content-center ">
+		<li class="nav-item">
+			<a class="nav-link active"href="#">Active</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link"href="#">Link</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link"href="#">Link</a>
+		</li>
+	</ul>
+
+	<div class="jumbotron text-center"style="margin-bottom:0"><h1>Ma première page Bootstrap</h1><p>Redimensionner la page pour voir l'effet</p></div>
+
+	<div style="background-color: green" class="container.fluid">
+		<h1>Ma première page Bootstrap</h1>
+		<p>Un paragraphe de ma page.</p>
+	</div>
+
+	<div style="background-color: red" class="container-sm">100% de largeur jusqu'à arriver à largeur d'écran "small" (sm)</div>
+	<div style="background-color: blue" class="container-md">100% de largeur jusqu'à arriver à largeur d'écran "medium" (md)</div>
+	<div style="background-color: purple" class="container-lg">100% de largeur jusqu'à arriver à largeur d'écran "large" (lg)</div>
+	<div style="background-color: gray" class="container-xl">100% de largeur jusqu'à arriver à largeur d'écran "extra large" (xl)</div>
+
+	<div style="background-color: blueviolet" class="row">
+		<div style="background-color: royalblue" class="col">Bloc 1 de classe col</div>
+		<div style="background-color: gold" class="col">Bloc 2 de classe col</div>
+		<div style="background-color: greenyellow" class="col">Bloc 3 de classe col</div>
+	</div>
+
+	<div style="background-color: bisque" class="row">
+		<div style="background-color: black" class="col-sm">Bloc 1 de classe col-sm</div>
+		<div style="background-color: brown" class="col-sm">Bloc 2 de classe col-sm</div>
+		<div style="background-color: rebeccapurple" class="col-sm">Bloc 3 de classe col-sm</div>
+	</div>
+
+	<div style="background-color: red" class="row">
+		<div style="background-color: blue" class="col-md">Bloc 1 de classe col-sm</div>
+		<div style="background-color: purple" class="col-md">Bloc 2 de classe col-sm</div>
+		<div style="background-color: gray" class="col-md">Bloc 3 de classe col-sm</div>
+	</div>
+
+	<div style="background-color: beige" class="row">
+		<div style="background-color: royalblue" class="col-lg">Bloc 1 de classe col-sm</div>
+		<div style="background-color: gold" class="col-lg">Bloc 2 de classe col-sm</div>
+		<div style="background-color: yellowgreen" class="col-lg">Bloc 3 de classe col-sm</div>
+	</div>
+
+	<div style="background-color: bisque" class="row">
+		<div style="background-color: black" class="col-sl">Bloc 1 de classe col-sm</div>
+		<div style="background-color: brown" class="col-sl">Bloc 2 de classe col-sm</div>
+		<div style="background-color: rebeccapurple" class="col-sl">Bloc 3 de classe col-sm</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8" style="background-color:red">Bloc parent de classe col-md-8, dont le conteneur est de classe "container"
+				<div class="row">
+					<div class="col-md-6"style="background-color:green">Bloc 1 enfant de classe col-md-6</div>
+					<div class="col-md-6"style="background-color:orange">Bloc 2 enfant de classe col-md-6</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-2 bg-primary">col-sm-12 col-md-2</div>
+		<div class="col-sm-12 col-md-4 bg-success">col-sm-12 col-md-4</div>
+		<div class="col-sm-12 col-md-2 bg-muted">col-sm-12 col-md-2</div>
+		<div class="col-sm-12 col-md-4 bg-danger">col-sm-12 col-md-4</div>
+	</div>
+
+	<div class="col-sm-12 col-md-2 text-white bg-dark">col-sm-12 col-md-2</div>
+
+</body>
+</html>

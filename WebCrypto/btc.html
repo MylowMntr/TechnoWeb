@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Crypt'Isen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="introduction à la cryptomonnaie">
+    <meta name="keywords" content="cryptomonnaie, cryptocurrency, crypto, bitcoin, ethereum">
+    <meta name="author" content="Evain Sacha - Milo Montuori">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="sidenav">
+      <input type="checkbox" id="toggle-nav" aria-label="open/close navigation">
+      <label for="toggle-nav" class="nav-button"></label>
+      <ul class="main-nav">
+        <!-- menu principal -->
+        <li><a href="index.html" ><i class="accueil"></i>Accueil</a></li>
+        <li><i class="minav"></i>Rubriques
+          <ul class="hidden">
+            <li><a href="whoareus.html">Qui somme-nous ?</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="usefull.html">Références utiles</a></li>
+            <li><a href="lexique.html">Lexique (!)</a></li>
+          </ul>
+        </li>
+        <!-- menu cryptos -->
+        <li><i class="minav"></i>Cryptos Actuelles
+            <ul class="hidden">
+              <li><a href="btc.html">Bitcoin</a></li>
+              <li><a href="ethereum.html">Ethereum</a></li>
+              <li><a href="chainlink.html">Chainlink</a></li>
+            </ul>
+        </li>
+      </ul>
+      <!-- footer dans le menu nav -->
+      <div class="footer">
+        Crypt'Isen par Milo et Sacha
+        2021-2022
+      </div>
+    </nav>
+
+    <!-- partie principale / texte -->
+    <main>     
+    <div class="center">
+      <div class="title">Crypt'Isen</div>
+      <div class="sub_title">la cryptomonnaie pour tous !</div>
+    </div>
+    <h3>Le bitcoin en quelques mots : </h3>
+    <p>
+      Le bitcoin est connue pour être la première cryptomonnaie ainsi que celle qui s'échange au plus haut prix contre des monnaies FIAT.
+      Son <a href="https://bitcoin.org/bitcoin.pdf">whitepaper</a> (document expliquant son fonctionnement technique ainsi que l'usage qu'on pourrait en faire)
+      fut publié le 31 octobre 2008, par satoshi nakamoto. La personne qui se cache derrière ce nom est encore à ce jour inconnue.
+      Le bitcoin, ou le premier système d'échange monétaire de paire à paire, est donc à l'origine de tout ce qu'on connait aujourd'hui
+      dans cet écosystème. Cette monnaie repose sur la technologie blockchain, qui se comporte comme un annuaire de transactions géant 
+      et public. La sécurité du système est en partie basée sur ce principe d'ouverture.
+    </p>
+
+    <h3>Graphique du prix de la paire BTC/USD.</h3>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_7c104"></div>
+        <div class="tradingview-widget-copyright"><a href="https://fr.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">BTCUSD graphique</span></a> par TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+        new TradingView.widget(
+        {
+        "width" : "100%",
+        "height": 610,
+        "symbol": "COINBASE:BTCUSD",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "fr",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "hide_legend": true,
+        "save_image": false,
+        "container_id": "tradingview_7c104"
+    }
+        );
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </main>
+</body>
+</html>
+  

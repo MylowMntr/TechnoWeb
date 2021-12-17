@@ -1,0 +1,45 @@
+/* on colle à gauche la boite jaune (décalée d'1% quand même) */ 
+#boitejaune {
+/* Couleur de fond jaune */
+background-color: yellow;
+/* positionnement absolu */
+position: absolute;
+/* pousser du haut (propriété top) de 1em*/ 
+top: 1em;
+/* pousser de la gauche de 1% ̈*/
+left: 1%;
+/* une largeur de 18% */
+width: 18%;
+}
+
+/* idem à droite */
+#boiteverte {
+/* Couleur de fond #A5DF39 */
+background-color: #A5DF39;
+/* positionnement absolu */
+position: absolute;
+/* pousser du haut (propriété top) de 1em*/
+top: 1em; 
+/* pousser de la droite de 1% ̈*/
+right: 1%;
+/* une largeur de 18% */
+width: 18%;
+}
+
+
+/* puis on met la boite bleue au centre en rajoutant de la marge externe à droite et à gauche */ 
+#boitebleue {
+/* Couleur de fond #ADDFDE */
+background-color: #ADDFDE;
+/* marge externe vertical de 1em et horizontal de 25% */
+margin: 1em 25%;
+}
+
+
+/* la boite rose ira au centre en dessous */
+#boiterose {
+/* Couleur de fond pink */
+background-color: pink;
+/* marge externe vertical de 1em et horizontal de 25% */ 
+margin: 1em 25%;
+}

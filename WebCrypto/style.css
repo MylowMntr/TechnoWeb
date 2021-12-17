@@ -1,0 +1,313 @@
+/* partie commune a tout les pages: */
+html {
+  height: 100%;
+  width: 100%;
+  display: block;
+  font-family:'Outfit', sans-serif;
+  color: white;
+}
+a{
+  color: #f78ca0;
+  text-decoration: none;
+}
+/* paramtre de background pour obtenir un degradé */
+body {
+  background-image: linear-gradient(to right, #000d47, #12205f);
+  margin: 0;
+}
+/* paramtre pour cacher la box en mode "petit ecran" */
+input[type="checkbox"]{
+  opacity:0
+}
+
+/* partie navigation, responsive (2 affichages) */
+@media screen and (max-width: 1100px){
+  .footer{
+    opacity: 0;
+  }
+  /* affichage avec transition mobile */
+  .main-nav {
+    position: absolute;
+    width: 70vw;  
+    transform: translateX(-100%) translateZ(0);
+    transition: transform .1s;
+    will-change: transform;
+  }
+  /* bouton pour refermer le nav */
+  input:checked ~ .main-nav {
+    transform: translateX(0);
+    z-index: 20;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #12205f;
+    top: 60px;
+  }
+  /* parametre du texte contenu dans le menu de navigation */
+  .main-nav > a > li{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f78ca0;
+    background-color: #12205f;
+  }
+  .main-nav {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+  }
+  /* parametre du texte du menu de navigation */
+  .main-nav li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 16px 52px;
+    color: white;
+    text-decoration: none;
+  }
+  .main-nav > li .minav {
+    position: absolute;
+    left: 12px;
+  }
+  /* affichage du footer sous le menu */
+  input:checked ~ .footer{
+    position: absolute;
+    z-index: 20;
+    opacity: 1;
+    bottom: 0;
+    padding: 20px;
+    background-color: #12205f;
+  }
+  /* parametre du bouton */
+  .nav-button {
+    display: block;
+    position: absolute;
+    top: 1rem; left: 1rem;
+    z-index: 1;
+    height: 3rem; width: 3.5rem;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #f78ca0, #f78ca0),
+      linear-gradient(to right, #f78ca0, #f78ca0),
+      linear-gradient(to right, #f78ca0, #f78ca0);
+    background-position: center top, center, center bottom;
+    background-repeat: no-repeat;
+    background-size: 3.5rem .6rem;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    margin-left: 20px;
+   }
+}
+/* deuxieme config responsive */
+@media screen and (min-width: 1100px){
+/* parametre d'un menu latéral, ici a gauche */
+  .sidenav {
+    position: fixed;    /* Ne bouge pas suivant le scroll */
+    width: 17%;
+    height: 100%;
+    background-color: #000d47;
+    line-height: 30px;
+    z-index: 10;  /* TOUJOURS au premier plan */
+    border-right: #f78ca0 3px solid;
+  }
+  .sidenav .main-nav > a > li{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f78ca0;
+    background-color: #12205f;
+  }
+  .sidenav .main-nav {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    padding-top: 50%;
+  }
+  /* parametre du texte contenu dans le menu de navigation */
+  .sidenav .main-nav li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 16px 52px;
+  }
+  .sidenav .main-nav > li .minav {
+    position: absolute;
+    left: 12px;
+  }
+  .sidenav .main-nav > li:hover, .sidenav .main-nav > li:active, .sidenav .main-nav > li:focus {
+    background-color: #062489;
+    cursor: pointer;
+  }
+  .sidenav .main-nav > li:hover .hidden, .sidenav .main-nav > li:active .hidden, .sidenav .main-nav > li:focus .hidden {
+    width: 228px;
+  }
+  /* gestion des tailles du menu nav */
+  .hidden {
+    width: 0;
+    height: 100%;
+    padding: 64px 0;
+    padding-top: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #001763;
+    transition: all 0.1s;
+    z-index: 12;
+  }
+  /* parametres des differentes listes */
+  .hidden li {
+     padding: 16px 24px;
+  }
+  .hidden a {
+    text-decoration: none;
+    color: white;
+  }
+  .hidden li:hover, .hidden li:active, .hidden li:focus {
+     background-color: #062489;
+     color: #f78ca0;
+  }
+  
+  .footer{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+  }
+}
+
+/* parametre du title */
+@media screen and (max-width: 1100px){
+  .title{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .title {
+    text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  /* Ajout d'un ligne rose au bord des titre en format "grand ecran" */
+  .title:after,.title:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+    background-color:#f78ca0;
+  }
+}
+/* parametre du main responsive */
+@media screen and (max-width: 1100px){
+  main {
+    position: relative;
+    margin: 50px;
+  }
+}
+@media screen and (min-width: 1100px){
+  main {
+    position: relative;
+    float: right;
+    width: 80%;
+    margin: 20px;
+  }
+}
+/* parametre generaux des titres et textes contenu dans les mains */
+.center{
+  padding: 25px 20px;
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 500;
+}
+.center .btn{
+  margin-top: 20px;
+}
+.center .btn button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* parametre du formlulaire de contact de la page contact.html */
+.row{
+  text-align: center;
+}
+.formulaire {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 30px;
+  width: 50%;
+  text-align: center;
+}
+.formulaire:active, .formulaire:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #f78ca0; 
+}
+/* parametre du bouton du formulaire de contact */
+.btn {
+  margin-top: 20px;
+  height: 55px;
+  box-shadow: 0px 10px 14px -7px #f78ca0;
+  background-image: linear-gradient(to right, #000d47, #12205f);
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bold;
+  padding:13px 32px;
+  text-decoration:none;
+  }
+.btn:hover {
+    background-image: linear-gradient(to right, #021569, #172a7e);
+}
+.btn:active {
+    position:relative;
+    top:1.2px;
+}

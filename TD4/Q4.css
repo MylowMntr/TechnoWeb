@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+html {
+/*Mettre la police Lucida Sans, sans-serif sinon.*/
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+/*Couleur de fond #003466 */
+background-color: #003466;
+/*Texte en blanc */
+color: white;
+/*Marge interne 15 px*/
+padding: 15px;
+}
+
+nav ul {
+/* Ce qu'il faut pour un menu vertical (voir TD précédent)*/
+list-style-type: none;
+background-color: #E5F9FF;
+margin: 0;
+padding: 0;
+/* Marges à 0*/
+/* margin: 0; */
+padding: 0;
+}
+
+nav li a{
+/*Marge interne 8 px*/
+padding: 8px;
+/*Marge externe en bas de 7 px*/
+margin-bottom: 7px;
+/*Couleur de fond #28d0d0 */
+background-color: #28d0d0;
+/*Texte en blanc */
+color: white;
+/* Ajouter ce qu'il faut pour un menu vertical (voir TD précédent)*/
+display: block;
+text-decoration: none;
+text-transform: none;
+padding: 8px 16px;
+}
+
+nav li a:hover {
+/*Couleur de fond #F23000 */
+background-color: #F23000;
+}
+
+.aside {
+/*Couleur de fond #28d0d0 */
+background-color: #28d0d0;
+/*Texte en blanc */
+color: white;
+/*Texte centré */
+text-align: center;
+/*Taille de police 12 px*/
+font-size: 12px;
+/*Marge interne 15 px*/
+padding: 15px;
+
+}
+footer {
+/*Couleur de fond #003466 */
+background-color: #003466;
+/*Texte en blanc */
+color: white;
+/*Texte centré */
+text-align: center;
+/*Taille de police 12 px*/
+font-size: 12px;
+/*Marge interne 15 px*/
+padding: 15px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 100% auto;
+  grid-gap: 5px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+
+@media only screen and (max-width: 768px){
+  [class*="col-"] {
+    width: 100%;
+  }
+}
